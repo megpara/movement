@@ -10,16 +10,19 @@ export default function About() {
                 <div className="name text-center !text-3xl md:!text-[6vw]">Megan Paradowski</div>
             </div>
             <div className="md:flex flex-row md:px-32 md:pt-16 items-center">
-                <img src="headshot.png" className="md:w-1/3 md:mr-8" />
+                <img src="MeganParadowskiHeadshot.png" className="md:w-1/3 md:mr-8" />
                 <div className="paragraph md:pt-0 pt-8 md:text-left text-justify">
-                Megan Paradowski is a mover and maker based in Los Angeles. She has created and performed in contemporary dance works across the US and Europe. She co-founded <a href="https://www.voltacollective.com/" target="_blank" className="uppercase font-bold text-xs">Volta</a>, a Los Angeles based dance theatre company, and has worked on commercial photo and video shoots including CloZee, Loren Stewart, and Undesigned LA, amongst others. Megan is interested in collaborating with other artists and celebrating other forms, as well as transcendence through live performance. She holds a BFA in Dance from Tisch School of the Arts at NYU, and she has taught for the University of Redlands, South Pasadena High School, and Genesis Studios, amongst others.
+                Megan Paradowski has choreographed and performed in contemporary dance works across the US and Europe in venues such as 2220 Arts + Archives, the Museum of Neon Art, the Institute for Art and Olfaction, NAVEL LA, and Hosek Contemporary Berlin. Her work has been reviewed by the LA Times, Autre Magazine, LA Dance Chronicle, and Fjord Review, amongst others. She is honored to have received grants from the German Consulate General in Los Angeles and the US Embassy in Cyprus. She has had the incredible opportunity to tour and perform her work over the past five years in places such as Berlin, London, and Cyprus.
+                <br />
+                <br />
+                Megan also works to bring avant-garde movement to the entertainment industry, where she has worked on commercial photo and video shoots including CloZee, Madilyn Bailey, Loren Stewart, and Undesigned LA. Megan is interested in collaborating with other artists and celebrating other forms, as well as transcendence through live performance. She holds a BFA in Dance from Tisch School of the Arts at NYU, and she has taught as a professor of dance at the University of Redlands, as well as at schools across Los Angeles such as South Pasadena High School and Genesis Studios.
                 </div>
             </div>
             <div className="paragraph leading-8 pt-16 md:px-32 uppercase !text-sm">
                 <div className="pt-8 pb-2 border-b-[1px] border-black w-full"><strong>Teaching Experience</strong></div>
                 <div className="border-b-[1px] border-black w-full py-2 flex justify-between">
                     <div>Genesis Studios</div>
-                    <div className="font-bold text-xs"><a href="https://genesisstudiosla.com/">Volta Company Class</a></div>
+                    <div>Weekly Class</div>
                 </div>
                 <div className="border-b-[1px] border-black w-full py-2 flex justify-between">
                     <div className="w-1/3">University of Redlands</div>
@@ -41,7 +44,7 @@ export default function About() {
                 </div>
                 <div className="border-b-[1px] border-black w-full py-2 flex justify-between">
                     <div className="w-1/3">The Space LA</div>
-                    <div>Volta Fall Workshop</div>
+                    <div>Fall Workshop</div>
                 </div>
                 <div className="border-b-[1px] border-black w-full py-2 flex justify-between">
                     <div className="w-1/3">Arts on Site NYC</div>
