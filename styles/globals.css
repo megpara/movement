@@ -2,22 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+    font-family: "Berliner Fraktur";
+    src: url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.eot");
+    src: url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/5e93bbe9f881d16c72596c26b47a6c23.svg#Berliner Fraktur")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+@import url("https://use.typekit.net/cix7ceo.css");
+
 html,
 body {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont,
+  font-family: "aktiv-grotesk", sans-serif, "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
     overflow: scroll;
+    cursor: default;
 }
 
-a {
+a, button {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+}
+
+button:not(.logo button) {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 * {
@@ -26,13 +48,26 @@ a {
 #__next {
   height: 100%;
 }
-.title {
-  padding-top: 6rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  font-weight: 300;
+h1, h2, h3, h4, h5, h6, .logo {
+  font-family: "Berliner Fraktur";
+  color: #131313;
+}
+.h1 {
+  font-size: 2.8rem;
+}
+.h6 {
   font-size: 2rem;
+}
+p {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 200;
+  color: #131313;
+  letter-spacing: 0.01rem;
+}
+a:not(.logo a) {
+  /* font-weight: 600; */
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 .subtitle {
   text-transform: uppercase;
@@ -109,5 +144,11 @@ a {
   }
   .wrapper {
     padding: 4rem 3rem;
+  }
+  button {
+    letter-spacing: 0;
+  }
+  .h1 {
+    font-size: 2rem;
   }
 }
