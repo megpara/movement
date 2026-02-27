@@ -23,13 +23,13 @@ const clientList = [
 ]
 
 const infoMedia = [
-  "/meg/welldone_bts.jpg",
+  // "/meg/welldone_bts.jpg",
   "/meg/launch_rehearsal_full.jpg",
   "/meg/malibu.gif",
   "/meg/teaching.jpg",
-  "/meg/legs_color.jpg",
+  // "/meg/legs_color.jpg",
   "/meg/launch_rehearsal_grayscale.jpg",
-  "/meg/suuvi_bts.jpg"
+  // "/meg/suuvi_bts.jpg"
 ]
 
 export default function Home() {
