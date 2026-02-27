@@ -20,23 +20,30 @@ export default function FlickableCarousel({ media = [] }) {
     const baseSpeed = 0.5
     const friction = 0.95
 
-    const oneSetWidth = container.scrollWidth / 3
-    container.scrollLeft = oneSetWidth // start in middle
-
     const animate = () => {
-      // Blend drift based on interaction
+      const current = container.scrollLeft
+
+      // Blend drift
       const targetDrift = isInteracting.current ? baseSpeed * 0.3 : baseSpeed
       drift.current += (targetDrift - drift.current) * 0.05
 
-      // Move carousel
-      container.scrollLeft += drift.current + velocity.current
+      const movement = drift.current + velocity.current
+      const next = current + movement
 
-      // Apply friction
       velocity.current *= friction
 
-      // **Modulo wrapping** to prevent jumps on fast flicks
-      const wrapped = ((container.scrollLeft % oneSetWidth) + oneSetWidth) % oneSetWidth
-      container.scrollLeft = wrapped + oneSetWidth
+      const oneSetWidth = container.scrollWidth / 3
+      const leftBoundary = oneSetWidth * 0.5
+      const rightBoundary = oneSetWidth * 1.5
+
+      // Only reposition if actually leaving the middle set
+      if (next <= leftBoundary) {
+        container.scrollLeft = next + oneSetWidth
+      } else if (next >= rightBoundary) {
+        container.scrollLeft = next - oneSetWidth
+      } else {
+        container.scrollLeft = next
+      }
 
       requestAnimationFrame(animate)
     }
