@@ -4,32 +4,32 @@ import Layout from "../components/Layout"
 import Carousel from "../components/Carousel"
 
 const workMedia = [
-  "/work/soho_davon.JPG",
-  "/work/welldone.PNG",
+  "/work/soho_davon.jpg",
+  "/work/welldone.jpg",
   "/work/clozee.gif",
-  "/work/simulacra.JPG",
-  "/work/soho_courtney.JPG",
+  "/work/simulacra.jpg",
+  "/work/soho_courtney.jpg",
   "/work/simulacra_maddie.jpg",
   "/work/bozo.gif",
   "/work/simulacra_nadia_marco.jpg",
-  "/work/welldone_daphne_travis.JPEG"
+  "/work/welldone_daphne_travis.jpg"
 ]
 
 const clientList = [
   ["CloZee", "L.A. Dance Project", "Soho House", "The Aster", "Undesigned LA"],
-  ["Melody Wine Bar", "Bloodlust Wine Bar", "BOZO Mag", "Babst Gallery"],
+  ["Melody Wine Bar", "Bloodlust Wine Bar", "BOZO Mag Gallery", "Babst Gallery"],
   ["2220 Arts + Archives", "Dance Camera West", "Buffer Fringe Festival Cyprus"],
   ["Hosek Contemporary Berlin", "Metre Squared London"]
 ]
 
 const infoMedia = [
-  "/meg/welldone_bts.JPG",
+  "/meg/welldone_bts.jpg",
   "/meg/launch_rehearsal_full.jpg",
   "/meg/malibu.gif",
   "/meg/teaching.jpg",
-  "/meg/legs_color.JPG",
+  "/meg/legs_color.jpg",
   "/meg/launch_rehearsal_grayscale.jpg",
-  "/meg/suuvi_bts.JPG"
+  "/meg/suuvi_bts.jpg"
 ]
 
 export default function Home() {
@@ -223,7 +223,7 @@ export default function Home() {
               className="h-full flex flex-col items-center justify-between w-full">
                 <div className="basis-1/2 flex items-center justify-center text-xs px-4 pt-8 md:p-8">
                   {/* <h1 className="h6 basis-1/3">MP</h1> */}
-                  <p className="w-full md:basis-1/2 md:text-center">
+                  <p className="w-full md:basis-1/2 indent-12">
                   Megan Paradowski is an LA-based choreographer and movement director.  
                   She holds a BFA in Dance from NYU’s Tisch School of the Arts and is the founder and director of contemporary dance company{" "}<a href="http://emparadance.com">Empara</a>. 
                   Megan was recently the artist in residence at L.A. Dance Project for LAUNCH:LA 2025.
