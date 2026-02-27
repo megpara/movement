@@ -4,15 +4,15 @@ import Layout from "../components/Layout"
 import Carousel from "../components/Carousel"
 
 const workMedia = [
-  "/work/soho_davon.jpg",
-  "/work/welldone.jpg",
-  "/work/clozee.gif",
-  "/work/simulacra.jpg",
-  "/work/soho_courtney.jpg",
-  "/work/simulacra_maddie.jpg",
-  "/work/bozo.gif",
-  "/work/simulacra_nadia_marco.jpg",
-  "/work/welldone_daphne_travis.jpg"
+  "/work-copy/soho_davon.jpg",
+  "/work-copy/welldone.jpg",
+  "/work-copy/clozee.gif",
+  "/work-copy/simulacra.jpg",
+  "/work-copy/soho_courtney.jpg",
+  "/work-copy/simulacra_maddie.jpg",
+  "/work-copy/bozo.gif",
+  "/work-copy/simulacra_nadia_marco.jpg",
+  "/work-copy/welldone_daphne_travis.jpg"
 ]
 
 const clientList = [
@@ -23,13 +23,13 @@ const clientList = [
 ]
 
 const infoMedia = [
-  "/meg/welldone_bts.jpg",
-  "/meg/launch_rehearsal_full.jpg",
-  "/meg/malibu.gif",
-  "/meg/teaching.jpg",
-  "/meg/legs_color.jpg",
-  "/meg/launch_rehearsal_grayscale.jpg",
-  "/meg/suuvi_bts.jpg"
+  "/meg-copy/welldone_bts.jpg",
+  "/meg-copy/launch_rehearsal_full.jpg",
+  "/meg-copy/malibu.gif",
+  "/meg-copy/teaching.jpg",
+  "/meg-copy/legs_color.jpg",
+  "/meg-copy/launch_rehearsal_grayscale.jpg",
+  "/meg-copy/suuvi_bts.jpg"
 ]
 
 export default function Home() {
